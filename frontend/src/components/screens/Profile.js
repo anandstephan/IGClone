@@ -34,7 +34,7 @@ const Profile = () =>{
             margin:"18px 0px"
         }}>
             <div>
-            <img src="https://i1.wp.com/thelifestylereport.ca/wp-content/uploads/2014/04/Chris-Evan-Captain-America-2-1.jpg?resize=640%2C593&ssl=1" style={{width:'160px',height:"160px",borderRadius:"80px"}}/>
+            <img src={state?state.pic:"Loading"} style={{width:'160px',height:"160px",borderRadius:"80px"}}/>
             </div>
             <div>
                 <h4>{state?state.name:"Loading"}</h4>

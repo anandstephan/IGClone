@@ -4,8 +4,8 @@ import { UserContext } from '../../App'
 
 const UserProfile = () =>{
     const [userProfile, setUserProfile] = useState(null)
-    const [showFollow,setShowFollow] = useState(true)
     const {state,dispatch} = useContext(UserContext)
+     const [showFollow,setShowFollow] = useState(true)
     const {userId} = useParams()
     // console.log(userProfile)
 
@@ -98,7 +98,7 @@ const UserProfile = () =>{
             margin:"18px 0px"
         }}>
             <div>
-            <img src="https://i1.wp.com/thelifestylereport.ca/wp-content/uploads/2014/04/Chris-Evan-Captain-America-2-1.jpg?resize=640%2C593&ssl=1" style={{width:'160px',height:"160px",borderRadius:"80px"}}/>
+            <img src={userProfile.user.pic} style={{width:'160px',height:"160px",borderRadius:"80px"}}/>
             </div>
             <div>
             <h4>{userProfile.user.name}</h4>
