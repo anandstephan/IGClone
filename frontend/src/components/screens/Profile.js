@@ -37,12 +37,12 @@ const Profile = () =>{
             <img src={state?state.pic:"Loading"} style={{width:'160px',height:"160px",borderRadius:"80px"}}/>
             </div>
             <div>
-                <h4>{state?state.name:"Loading"}</h4>
-                <h5>{state?state.email:"Loading"}</h5>
+                <h4>{state?state?.name:"Loading"}</h4>
+                <h5>{state?state?.email:"Loading"}</h5>
                 <div style={{display:'flex',justifyContent:"space-between",width:"108%"}}>
-                    <h6>{pic?pic.length:"0"} Posts</h6>
-                    <h6>{state?state.followers.length:"0"} Followers</h6>
-                    <h6>{state?state.following.length:"0"} Following</h6>
+                    <h6>{pic?pic?.length:"0"} Posts</h6>
+                    <h6>{state?state?.followers?.length:"0"} Followers</h6>
+                    <h6>{state?state?.following?.length:"0"} Following</h6>
                 </div>
             </div>
         </div>
