@@ -41,9 +41,9 @@ const CreatePost = () =>{
     const PostDetails = () =>{
         const data = new FormData();
         data.append("file",image);
-        data.append("upload_preset","instagramclone")
-        data.append("cloud_name","steveprojectinstaclone")
-        fetch("https://api.cloudinary.com/v1_1/steveprojectinstaclone/image/upload",{
+        data.append("upload_preset","instaclone")
+        data.append("cloud_name","igproject")
+        fetch("https://api.cloudinary.com/v1_1/igproject/image/upload",{
             method:"post",
             body:data
         })
