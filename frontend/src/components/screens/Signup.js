@@ -95,6 +95,7 @@ const Signup = () =>{
                     <span>Upload Image</span>
                     <input 
                     type="file"
+                    onChange={(e)=>setImage(e.target.files[0])}
                     />
                     </div>
                     <div className="file-path-wrapper">
